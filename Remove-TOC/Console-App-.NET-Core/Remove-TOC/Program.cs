@@ -117,7 +117,11 @@ namespace Remove_TOC
             //Finds whether TOC end item is exist in text body items.
             for (int i = tBody.ChildEntities.IndexOf(toc.OwnerParagraph) + 1; i < tBody.ChildEntities.Count; i++)
             {
-                WParagraph paragraph = tBody.ChildEntities[i] as WParagraph;
+                WParagraph paragraph = null;
+                if (tBody.ChildEntities[i] is WParagraph)
+                    paragraph = tBody.ChildEntities[i] as WParagraph;
+                else
+                    continue;
 
                 foreach (Entity item in paragraph.Items)
                 {
