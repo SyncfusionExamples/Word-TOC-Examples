@@ -1,7 +1,6 @@
 ﻿using Syncfusion.DocIO;
 using Syncfusion.DocIO.DLS;
 using Syncfusion.DocIORenderer;
-using System;
 using System.IO;
 
 namespace Create_TOC
@@ -43,7 +42,7 @@ namespace Create_TOC
                 //Updates the table of contents.
                 document.UpdateTableOfContents();
                 //Saves the file in the given path
-                Stream docStream = File.Create(Path.GetFullPath(@"../../../Sample.docx"));
+                Stream docStream = File.Create(Path.GetFullPath(@"../../../TOC-creation.docx"));
                 document.Save(docStream, FormatType.Docx);
                 docStream.Dispose();
             }

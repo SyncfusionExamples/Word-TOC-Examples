@@ -1,7 +1,6 @@
 ﻿using Syncfusion.DocIO;
 using Syncfusion.DocIO.DLS;
 using Syncfusion.DocIORenderer;
-using System;
 using System.IO;
 
 namespace TOC_for_custom_styles
@@ -54,7 +53,7 @@ namespace TOC_for_custom_styles
                 //Updates the table of contents.
                 document.UpdateTableOfContents();
                 //Saves the file in the given path
-                Stream docStream = File.Create(Path.GetFullPath(@"../../../Sample.docx"));
+                Stream docStream = File.Create(Path.GetFullPath(@"../../../TOC-custom-style.docx"));
                 document.Save(docStream, FormatType.Docx);
                 docStream.Dispose();
             }

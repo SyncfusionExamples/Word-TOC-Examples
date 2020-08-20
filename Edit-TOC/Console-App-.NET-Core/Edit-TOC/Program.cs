@@ -29,7 +29,7 @@ namespace Edit_TOC
                 //Updates the table of contents
                 document.UpdateTableOfContents();
                 //Saves the file in the given path
-                docStream = File.Create(Path.GetFullPath(@"../../../Sample.docx"));
+                docStream = File.Create(Path.GetFullPath(@"../../../TOC-Editing.docx"));
                 document.Save(docStream, FormatType.Docx);
                 docStream.Dispose();
             }
