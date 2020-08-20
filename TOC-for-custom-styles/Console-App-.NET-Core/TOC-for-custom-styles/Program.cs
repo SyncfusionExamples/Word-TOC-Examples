@@ -35,8 +35,6 @@ namespace TOC_for_custom_styles
                 toc.SetTOCLevelStyle(1, "MyStyle1");
                 toc.SetTOCLevelStyle(2, "MyStyle2");
                 toc.SetTOCLevelStyle(3, "MyStyle3");
-                //Sets the outline levels to true, to include the paragraphs with 1 to 9 outline levels in TOC.
-                toc.UseOutlineLevels = true;
                 //Adds content to the Word document with custom styles.
                 WSection section = document.LastSection;
                 WParagraph newPara = section.AddParagraph() as WParagraph;

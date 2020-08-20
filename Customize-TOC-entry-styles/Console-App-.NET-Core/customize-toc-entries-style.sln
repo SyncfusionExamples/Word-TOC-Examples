@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.128
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customize-TOC-entries-style", "Customize-TOC-entries-style/Customize-TOC-entries-style.csproj", "{750596B5-7765-4B40-8ABF-BC75FF6F0868}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{750596B5-7765-4B40-8ABF-BC75FF6F0868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750596B5-7765-4B40-8ABF-BC75FF6F0868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750596B5-7765-4B40-8ABF-BC75FF6F0868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750596B5-7765-4B40-8ABF-BC75FF6F0868}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A885820F-4B80-47B8-9173-825B5FDA6EFF}
+	EndGlobalSection
+EndGlobal

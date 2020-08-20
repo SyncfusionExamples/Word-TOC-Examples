@@ -1,7 +1,6 @@
 ﻿using Syncfusion.DocIO;
 using Syncfusion.DocIO.DLS;
 using Syncfusion.DocIORenderer;
-using System;
 using System.IO;
 
 namespace Edit_TOC
@@ -18,6 +17,11 @@ namespace Edit_TOC
                 docStream.Dispose();
                 //Edits the TOC field.
                 TableOfContent toc = document.Sections[0].Body.Paragraphs[2].Items[0] as TableOfContent;
+                //By default, the TOC is generated for 3 levels of heading styles (heading 1 to 3)
+                //Here, TOC levels are set for just 2 levels using LowerHeadingLevel 
+                //and UpperHeadingLevel properties (Heading 1 and Heading 2)
+                toc.LowerHeadingLevel = 1;
+                toc.UpperHeadingLevel = 2;
                 //Hides the page number in TOC.
                 toc.IncludePageNumbers = false;
                 //Includes the TC fields in TOC heading.
