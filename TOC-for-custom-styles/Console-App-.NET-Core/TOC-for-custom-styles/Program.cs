@@ -44,7 +44,6 @@ namespace TOC_for_custom_styles
                 AddHeading(section, "MyStyle3", "Paragraph 1", "This is the 3rd custom style. Each section contains any number of paragraphs. A paragraph is a set of statements that gives a meaning for the text.");
                 AddHeading(section, "MyStyle3", "Paragraph 2", "This is the 3rd custom style. This demonstrates the paragraphs at the same level and style as that of the previous one. A paragraph can have any number formatting. This can be attained by formatting each text range in the paragraph.");
                 AddHeading(section, "Normal", "Paragraph with normal", "This is the paragraph with normal style. This demonstrates the paragraph with outline level 4 and normal style. This can be attained by formatting outline level of the paragraph.");
-                document.LastParagraph.ParagraphFormat.OutlineLevel = OutlineLevel.Level4;
                 //Adds a new section to the Word document.
                 section = document.AddSection() as WSection;
                 section.PageSetup.Margins.All = 72;
