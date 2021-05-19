@@ -55,19 +55,23 @@ namespace Change_Tab_Leader_of_TOC
             //Finds the TOC from Word document.
             TableOfContent toc = FindTableOfContent(document);
 
+            //Change tab leader for table of contents in the Word document
             if (toc != null)
-                GetTableOfContents(toc);
+                ChangeTabLeaderForTableOfContents(toc, TabLeader.Hyphenated);
 
+            //Saves and closes the Word document
             document.Save("Result.docx");
+            document.Close();
+
             System.Diagnostics.Process.Start("Result.docx");
         }
 
         #region HelperMethods
         /// <summary>
-        /// Delete the table of contents from Word document.
+        /// Change tab leader for table of contents in the Word document.
         /// </summary>
         /// <param name="toc"></param>
-        private static void GetTableOfContents(TableOfContent toc)
+        private static void ChangeTabLeaderForTableOfContents(TableOfContent toc, TabLeader tabLeader)
         {
             //Inserts the bookmark start before the TOC instance.
             BookmarkStart bkmkStart = new BookmarkStart(toc.Document, "tableOfContent");
@@ -91,9 +95,9 @@ namespace Change_Tab_Leader_of_TOC
             for (int i = 0; i < part.BodyItems.Count; i++)
             {
                 paragraph = part.BodyItems[i] as WParagraph;
-                //Sets the tab leader as none
+                //Sets the tab leader
                 if (paragraph.ParagraphFormat.Tabs.Count != 0)
-                    paragraph.ParagraphFormat.Tabs[0].TabLeader = TabLeader.Hyphenated;
+                    paragraph.ParagraphFormat.Tabs[0].TabLeader = tabLeader;
             }
 
             //Remove the bookmark which we add to get the paragraphs in the table of contents
