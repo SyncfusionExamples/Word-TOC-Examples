@@ -46,7 +46,7 @@ Supported File Formats
 - **Product page:** [Syncfusion&reg; Word Framework](https://www.syncfusion.com/document-processing/word-framework/net?utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples)
 - **Documentation:** [Table of Contents](https://help.syncfusion.com/file-formats/docio/working-with-table-of-contents?utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples)
 - **GitHub Examples:** [Syncfusion&reg; Word library examples](https://github.com/SyncfusionExamples/DocIO-Examples?utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples)
-- **Online demo:** [Syncfusion&reg; Word library - Online demos](https://ej2.syncfusion.com/aspnetcore/Word/SalesInvoice#/material3?utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples)
+- **Online demo:** [Syncfusion&reg; Word library - Online demos](https://document.syncfusion.com/demos/word/tableofcontents#/tailwind)
 
 ## Support and feedback
 - For any other queries, reach our [Syncfusion&reg; support team](https://support.syncfusion.com/agent/tickets/create?utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples) or post the queries through the [community forums](https://www.syncfusion.com/forums?utm_source=github&utm_source=github&utm_medium=listing&utm_campaign=github-docio-video-examples).
